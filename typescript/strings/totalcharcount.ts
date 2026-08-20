@@ -12,9 +12,9 @@ function charcount(str1:string):number
 
     // for(const char of str1)
 
-    for(let i=0; i<str1.length;i++)
+    for(const letter of str1)
     {
-        if(str1[i] !==" ")
+        if(letter !==' ')
         {
             count++
         }

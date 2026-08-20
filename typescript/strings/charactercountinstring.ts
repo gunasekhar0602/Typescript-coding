@@ -10,22 +10,23 @@ function geteachcharcount(str:string):{[key:string]:number}
 
 // create a for loop starting index as 0 and running until the i<str.length
 // This will allows us to inspect each and every charcter in the string one by one
-    for(let i=0;i<str.length;i++)
+    for(let char of str.toLowerCase())
     {
 
 // Extract each character using str[i] and store it in char variable
-        const char=str[i].toLowerCase()  // .toLowerCase() - for case convertion (optional)
-
+        // var char=str[i].toLowerCase()  // .toLowerCase() - for case convertion (optional)
+        if (char!==' '){
 //if it exist means increment value count by one
-        if(frequency[char])
-        {
-            frequency[char]++
-        }
+            if((frequency[char]))
+            {
+                frequency[char]++
+            }
 
-// if is not exist means we add character to object and initialize its count to one
-        else
-        {
-            frequency[char]=1
+    // if is not exist means we add character to object and initialize its count to one
+            else
+            {
+                frequency[char]=1
+            }
         }
     }
 
@@ -34,7 +35,7 @@ function geteachcharcount(str:string):{[key:string]:number}
 }
 
 // create a string and assign value
-const mystring="pPlaywright"
+const mystring="Guna  g  "
 
 // Call the function by providing the required arguments.
 console.log(geteachcharcount(mystring))
