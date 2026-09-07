@@ -1,3 +1,4 @@
+// create a function with fabinocie
 function fabinocie(num:number):number
 {
     if(num<1)
@@ -22,4 +23,4 @@ function fabinocie(num:number):number
     return current
 }
 
-console.log(fabinocie(7))
+console.log(fabinocie(2))

@@ -1,6 +1,6 @@
 function largestnumber(num:number[]):number
 {
-    var maxvalue=num[0]
+    var maxvalue=0
 
     for(let i=0; i<num.length;i++)
     {

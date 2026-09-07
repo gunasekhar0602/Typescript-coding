@@ -8,7 +8,7 @@ function reversingstring(str11:string):string
     var rev= ' '
     for(let i=str11.length-1;i>=0;i--)
     {
-        rev+=str11[i].toLowerCase()
+        rev+=str11[i]
     }
 
     return rev
@@ -16,3 +16,8 @@ function reversingstring(str11:string):string
 
 const rev='Apple'
 console.log(reversingstring(rev))
+
+
+
+
+
